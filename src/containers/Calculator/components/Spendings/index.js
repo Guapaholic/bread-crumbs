@@ -58,7 +58,7 @@ export class Spendings extends React.Component {
   constructor() {
     super(...arguments);
     this.state = {
-      validationText: 'Check if every expense has its price!',
+      validationText: 'Check to make sure all price fields are filled!',
     };
   }
 
@@ -82,7 +82,6 @@ export class Spendings extends React.Component {
     return (
       <AddExpensesContainer>
         <AddHeading>Add your expenses:</AddHeading>
-        <P>Input your expenditures in US dollars</P>
         {this.getExpenses()}
         <Button onClick={this.props.addExpense}>Add another expense</Button>
         <Button primary onClick={this.props.countExpenses}>Count your expenses</Button>

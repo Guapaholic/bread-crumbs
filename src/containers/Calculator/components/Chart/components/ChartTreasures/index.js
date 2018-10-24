@@ -29,7 +29,7 @@ const Ul = styled.ul`
 
 const Li = styled.li`
     width: 320px;
-    color: rgb(39, 44, 50);
+    color: white;
     &:last-of-type {
         width: 100%;
         font-size: 22px;
@@ -77,23 +77,23 @@ const ChartTreasures = ({ expensesData }) => {
 
   const treasures = [
     {
-      name: 'fresh bread',
+      name: 'Loaves of Fresh Bread',
       price: 3,
     },
     {
-      name: 'books',
+      name: 'Books',
       price: 40,
     },
     {
-      name: 'exotic trips',
+      name: 'Exotic Trips',
       price: 6000,
     },
     {
-      name: 'luxury cars',
+      name: 'Luxury Cars',
       price: 120000,
     },
     {
-      name: 'space trips',
+      name: 'Space Trips',
       price: 740000,
     },
   ];
@@ -101,9 +101,9 @@ const ChartTreasures = ({ expensesData }) => {
 
   return (
     <TreasuresContainer>
-      <H2>With money you spend on unnecessary things you could buy:</H2>
+      <H2>With money you spend on unnecessary things, you could buy:</H2>
       <Ul>{treasures.map(treasure => (
-        <Li key={treasure.name}><Em>{countTreasures(treasure.price)}</Em> treasure.name</Li>
+        <Li key={treasure.name}><Em>{countTreasures(treasure.price)}</Em> {treasure.name}</Li>
       ))}
         <Li>{billGates()}</Li>
       </Ul>

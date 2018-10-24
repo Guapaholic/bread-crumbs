@@ -104,7 +104,7 @@ export class Home extends React.Component {
   constructor() {
     super(...arguments);
     this.state = {
-      uselessExpenses: ['Beer', 'Gambling', 'Snacks', 'Parties', 'Gas', 'Cigarettes'],
+      uselessExpenses: ['Beer', 'Travel', 'Food', 'Pets', 'Gas', 'Movies'],
       seconds: 0,
     };
   }
@@ -124,12 +124,12 @@ export class Home extends React.Component {
   render() {
     return (
       <FullContainer id="start">
-          <MainHeading>Calculate your unnecessary spendings</MainHeading>
+          <MainHeading>Calculate Your Annual Expenses</MainHeading>
           <P>Have you ever wondered how much money do you spend on
               <B> {this.state.uselessExpenses[this.state.seconds % this.state.uselessExpenses.length]}</B>
-              during your whole life?
+              throughout your whole life?
           </P>
-          <CTA><Link to="/calc">Check it out</Link></CTA>
+          <CTA><Link to="/calc">Check it out!</Link></CTA>
       </FullContainer>
     );
   }

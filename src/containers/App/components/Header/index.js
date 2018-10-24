@@ -50,7 +50,7 @@ const active = {
 const Header = () => (
   <Nav>
     <ul>
-      <Li><IndexLink activeStyle={active} to="/">Start</IndexLink></Li>
+      <Li><IndexLink activeStyle={active} to="/">Home</IndexLink></Li>
       <Li><IndexLink activeStyle={active} to="/calc">Calc it</IndexLink></Li>
     </ul>
   </Nav>

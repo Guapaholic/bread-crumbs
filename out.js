@@ -53777,7 +53777,7 @@ var Header = function Header() {
                 _react2.default.createElement(
                     _reactRouter.IndexLink,
                     { activeStyle: active, to: '/' },
-                    'Start'
+                    'Home'
                 )
             ),
             _react2.default.createElement(
@@ -55763,7 +55763,7 @@ var Home = exports.Home = function (_React$Component) {
     var _this = _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).apply(this, arguments));
 
     _this.state = {
-      uselessExpenses: ['Beer', 'Gambling', 'Snacks', 'Parties', 'Gas', 'Cigarettes'],
+      uselessExpenses: ['Beer', 'Travel', 'Food', 'Pets', 'Gas', 'Movies'],
       seconds: 0
     };
     return _this;
@@ -55794,7 +55794,7 @@ var Home = exports.Home = function (_React$Component) {
         _react2.default.createElement(
           MainHeading,
           null,
-          'Calculate your unnecessary spendings'
+          'Calculate Your Annual Expenses'
         ),
         _react2.default.createElement(
           P,
@@ -55806,7 +55806,7 @@ var Home = exports.Home = function (_React$Component) {
             ' ',
             this.state.uselessExpenses[this.state.seconds % this.state.uselessExpenses.length]
           ),
-          'during your whole life?'
+          'throughout your whole life?'
         ),
         _react2.default.createElement(
           CTA,
@@ -55814,7 +55814,7 @@ var Home = exports.Home = function (_React$Component) {
           _react2.default.createElement(
             _reactRouter.Link,
             { to: '/calc' },
-            'Check it out'
+            'Check it out!'
           )
         )
       );
@@ -55960,7 +55960,7 @@ var Spendings = exports.Spendings = function (_React$Component) {
     };
 
     _this.state = {
-      validationText: 'Check if every expense has its price!'
+      validationText: 'Check to make sure all price fields are filled!'
     };
     return _this;
   }
@@ -55975,11 +55975,6 @@ var Spendings = exports.Spendings = function (_React$Component) {
           AddHeading,
           null,
           'Add your expenses:'
-        ),
-        _react2.default.createElement(
-          P,
-          null,
-          'Input your expenditures in US dollars'
         ),
         this.getExpenses(),
         _react2.default.createElement(
@@ -56063,14 +56058,14 @@ var SingleSpending = exports.SingleSpending = function (_React$Component) {
           _react2.default.createElement(
             'span',
             null,
-            'Expense name:'
+            'Expense Name:'
           ),
           _react2.default.createElement('input', { type: 'text',
             onChange: function onChange(event) {
               return _this2.props.changeName(event, _this2.props.index);
             },
             value: this.props.name,
-            placeholder: 'Ex: Beer, Snacks, Cigarettes...'
+            placeholder: 'EX: Beer, Snacks, Takeout...'
           })
         ),
         _react2.default.createElement(
@@ -56079,14 +56074,14 @@ var SingleSpending = exports.SingleSpending = function (_React$Component) {
           _react2.default.createElement(
             'span',
             null,
-            'Price per unit: '
+            'Unit Price: '
           ),
           _react2.default.createElement('input', { type: 'number',
             onChange: function onChange(event) {
               return _this2.props.changePrice(event, _this2.props.index);
             },
             value: this.props.price,
-            placeholder: 'Ex: 9,99',
+            placeholder: 'EX: $10',
             className: !this.props.calculator.validation && !this.props.valid ? 'invalid' : ''
           })
         ),
@@ -70653,7 +70648,7 @@ Object.defineProperty(exports, "__esModule", {
 var _templateObject = _taggedTemplateLiteral(['\n     text-align: center;\n     margin: 80px 0;\n     width: 100%;\n\n'], ['\n     text-align: center;\n     margin: 80px 0;\n     width: 100%;\n\n']),
     _templateObject2 = _taggedTemplateLiteral(['\n    font-size: 34px;\n    font-weight: 700;\n    letter-spacing: -1.4px;\n    margin: 20px auto;\n    color: rgba(39, 44, 50, 0.95);\n    @media (max-width: 600px) {\n        font-size: 24px;\n    }\n'], ['\n    font-size: 34px;\n    font-weight: 700;\n    letter-spacing: -1.4px;\n    margin: 20px auto;\n    color: rgba(39, 44, 50, 0.95);\n    @media (max-width: 600px) {\n        font-size: 24px;\n    }\n']),
     _templateObject3 = _taggedTemplateLiteral(['\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    flex-flow: row wrap;\n    min-height: 400px;\n'], ['\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    flex-flow: row wrap;\n    min-height: 400px;\n']),
-    _templateObject4 = _taggedTemplateLiteral(['\n    width: 320px;\n    color: rgb(39, 44, 50);\n    &:last-of-type {\n        width: 100%;\n        font-size: 22px;\n        font-weight: 700;\n        margin-top: 40px;\n    }\n'], ['\n    width: 320px;\n    color: rgb(39, 44, 50);\n    &:last-of-type {\n        width: 100%;\n        font-size: 22px;\n        font-weight: 700;\n        margin-top: 40px;\n    }\n']),
+    _templateObject4 = _taggedTemplateLiteral(['\n    width: 320px;\n    color: white;\n    &:last-of-type {\n        width: 100%;\n        font-size: 22px;\n        font-weight: 700;\n        margin-top: 40px;\n    }\n'], ['\n    width: 320px;\n    color: white;\n    &:last-of-type {\n        width: 100%;\n        font-size: 22px;\n        font-weight: 700;\n        margin-top: 40px;\n    }\n']),
     _templateObject5 = _taggedTemplateLiteral(['\n    display: block;\n    font-size: 50px;\n    color: rgba(39, 44, 50, 0.95);\n    text-shadow: 0px 1px 9px rgba(255, 255, 255, 0.99);\n    font-weight: 700;\n    @media (max-width: 600px) {\n        font-size: 34px;\n    }\n'], ['\n    display: block;\n    font-size: 50px;\n    color: rgba(39, 44, 50, 0.95);\n    text-shadow: 0px 1px 9px rgba(255, 255, 255, 0.99);\n    font-weight: 700;\n    @media (max-width: 600px) {\n        font-size: 34px;\n    }\n']);
 
 var _react = __webpack_require__(8);
@@ -70708,19 +70703,19 @@ var ChartTreasures = function ChartTreasures(_ref) {
   };
 
   var treasures = [{
-    name: 'fresh bread',
+    name: 'Loaves of Fresh Bread',
     price: 3
   }, {
-    name: 'books',
+    name: 'Books',
     price: 40
   }, {
-    name: 'exotic trips',
+    name: 'Exotic Trips',
     price: 6000
   }, {
-    name: 'luxury cars',
+    name: 'Luxury Cars',
     price: 120000
   }, {
-    name: 'space trips',
+    name: 'Space Trips',
     price: 740000
   }];
 
@@ -70730,7 +70725,7 @@ var ChartTreasures = function ChartTreasures(_ref) {
     _react2.default.createElement(
       H2,
       null,
-      'With money you spend on unnecessary things you could buy:'
+      'With money you spend on unnecessary things, you could buy:'
     ),
     _react2.default.createElement(
       Ul,
@@ -70744,7 +70739,8 @@ var ChartTreasures = function ChartTreasures(_ref) {
             null,
             countTreasures(treasure.price)
           ),
-          ' treasure.name'
+          ' ',
+          treasure.name
         );
       }),
       _react2.default.createElement(

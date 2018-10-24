@@ -121,20 +121,20 @@ export class SingleSpending extends React.Component {
     return (
       <ExpenseContainer>
         <div>
-          <span>Expense name:</span>
+          <span>Expense Name:</span>
           <input type="text"
                  onChange={event => this.props.changeName(event, this.props.index)}
                  value={this.props.name}
-                 placeholder="Ex: Beer, Snacks, Cigarettes..."
+                 placeholder="EX: Beer, Snacks, Takeout..."
           />
         </div>
         <div>
-          <span>Price per unit: </span>
+          <span>Unit Price: </span>
 
           <input type="number"
                  onChange={event => this.props.changePrice(event, this.props.index)}
                  value={this.props.price}
-                 placeholder="Ex: 9,99"
+                 placeholder="EX: $10"
                  className={(!this.props.calculator.validation && !this.props.valid) ? 'invalid' : ''}
           />
         </div>
