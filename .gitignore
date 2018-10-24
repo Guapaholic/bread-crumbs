@@ -1,0 +1,7 @@
+.idea
+*.*~
+/node_modules/
+node_modules/
+private/
+npm-exec.bat
+package-lock.json
