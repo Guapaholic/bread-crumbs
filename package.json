@@ -6,13 +6,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "wp": "node_modules/.bin/webpack",
-    "dev": "webpack-dev-server"
+    "dev": "webpack-dev-server",
+    "deploy": "gh-pages -d build"
   },
   "license": "ISC",
   "dependencies": {
     "auth0-js": "^9.8.1",
     "chart.js": "^2.6.0",
     "currency-formatter": "^1.2.1",
+    "gh-pages": "^2.0.1",
     "prop-types": "^15.6.0",
     "react": "^15.4.0",
     "react-chartjs-2": "^2.1.0",

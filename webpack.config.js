@@ -5,7 +5,7 @@ module.exports = {
   output: {
     path: path.resolve('./'),
     filename: 'out.js',
-    publicPath: './',
+    publicPath: './bread-crumbs/',
   },
   plugins: [
     // new webpack.DefinePlugin({
